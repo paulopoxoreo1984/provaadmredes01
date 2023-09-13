@@ -1,0 +1,12 @@
+version: '3'
+services:
+  meu-servico:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - paulo
+
+networks:
+  paulo:
+    external: true
